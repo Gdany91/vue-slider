@@ -1,4 +1,4 @@
-const {creatApp} = Vue;
+const {createApp} = Vue;
 
 createApp({
 
@@ -33,9 +33,25 @@ createApp({
         }
     
     }
-    
-}).mount(#app)
 
+},
+
+
+methods : {
+    nextImg(){
+        this.activeImage++;
+        if(this.activeImage > this.slides.length - 1){
+            this.activeImage = 0;
+        }
+     
+    ,}
+    prevImg(){
+        this.activeImage--;
+        if(this.activeImage < 0){
+            this.activeImage = this.slides.length - 1;
+        }
+    }
+}).mount('#app')
 
 
 
