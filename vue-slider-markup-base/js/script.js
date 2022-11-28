@@ -44,7 +44,8 @@ methods : {
             this.activeImage = 0;
         }
      
-    ,}
+    },
+    
     prevImg(){
         this.activeImage--;
         if(this.activeImage < 0){
